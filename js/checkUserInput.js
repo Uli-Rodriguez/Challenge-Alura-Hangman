@@ -81,6 +81,11 @@ keyBoard.forEach(button =>
         /* Si perdimos */
         if (loser)
         {
+            /* Revelar la palabra oculta */
+            for (let i = 0; i < keyWord.length; i++)
+            {
+                keyLetter.item(i).textContent = keyWord[i];
+            }
             const showResult = document.querySelector("#showResult");
             showResult.classList.add("loser");
             showResult.textContent = "Fin del juego";
