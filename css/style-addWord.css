@@ -1,0 +1,25 @@
+main div
+{
+    max-width: 90vw;
+}
+
+.inputWord
+{
+    width: 100%;
+    font-size: 3.1vh;
+    outline: none;
+    border: none;
+    margin-top: 10vh;
+    margin-bottom: 33.5vh;
+}
+
+.inputWord::placeholder
+{
+    color: #0A3871;
+}
+
+.inputInstructions
+{
+    display: block;
+    margin-bottom: 1.5vh;
+}
