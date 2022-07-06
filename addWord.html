@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style-addWord.css">
+        <link rel="stylesheet" href="assets/sweetAlert2/sweetalert2.css">
+        <script src="assets/sweetAlert2/sweetalert2.min.js"></script>
     </head>
     <body>
         <header>
@@ -20,7 +22,18 @@
         <main>
             <div>
                 <input type="text" placeholder="Ingrese una palabra" class="inputWord">
-                <span class="inputInstructions"><img src="images/Alerta.png" alt="Atencion">Máx. de 8 letras, solo mayusculas y sin caracteres especiales</span>
+                <select id="wordTopic">
+                    <option hidden value="">Seleccione un tema de su palabra</option>
+                    <option value="VEHICULOS">VEHICULOS</option>
+                    <option value="COMIDA">COMIDA</option>
+                    <option value="ANIMALES">ANIMALES</option>
+                    <option value="EMPRESAS">EMPRESAS</option>
+                    <option value="PAISES">PAISES</option>
+                    <option value="CAPITALES">CAPITALES</option>
+                    <option value="NOMBRES">NOMBRES</option>
+                    <option value="PERSONALIZADO">PERSONALIZADO</option>
+                </select>
+                <span class="inputInstructions"><img src="images/Alerta.png" alt="Atencion">Máx. de 8 letras y sin caracteres especiales</span>
                 <div class="buttonsBox">
                     <button class="primaryButton" id="saveAndStart">Guardar y empezar</button>
                     <a href="index.html"><button class="secondaryButton">Cancelar</button></a>
@@ -41,6 +54,6 @@
                 </li>
             </ul>
         </footer>
+        <script src="js/addCustomWord.js"></script>
     </body>
-    <script src="js/addWord.js"></script>
 </html>

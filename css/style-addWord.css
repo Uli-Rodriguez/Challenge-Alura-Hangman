@@ -6,16 +6,28 @@ main div
 .inputWord
 {
     width: 100%;
-    font-size: 3.1vh;
+    font-size: 3.1vmax;
     outline: none;
     border: none;
     margin-top: 10vh;
     margin-bottom: 33.5vh;
+    background-color: inherit;
+    color: #0A3871;
 }
 
 .inputWord::placeholder
 {
     color: #0A3871;
+}
+
+#wordTopic
+{
+    display: flex;
+    font-size: 1.5vmax;
+    margin-bottom: 1vmax;
+    background: #F3F5FC;
+    border: none;
+    outline: none;
 }
 
 .inputInstructions

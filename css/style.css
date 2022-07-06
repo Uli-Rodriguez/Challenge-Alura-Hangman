@@ -1,11 +1,11 @@
 *
 {
-    background: #F3F5FC;
     font-family: 'Inter', sans-serif;
 }
 
 body
 {
+    background: #F3F5FC;
     display: flex;
     flex-direction: column;
     min-height: 100vh
@@ -65,6 +65,7 @@ button:hover
 {
     border: 1px solid #0A3871;
     color: #0A3871;
+    background: inherit;
 }
 
 /* Boton de inicio de juego */
@@ -113,6 +114,7 @@ footer li
 footer img
 {
     height: 1em;
+    margin-right: 0.5em;
 }
 
 footer a

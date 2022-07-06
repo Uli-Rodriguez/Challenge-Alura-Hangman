@@ -1,81 +1,7 @@
-.tablero
+.board
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 70vw;
-    min-height: 25vmax ;
-    margin-top: 4vh;
-    margin-bottom: 2vh;
-}
-
-.hangmanDraw
-{
-    font-size: 0.5vh;
-    width: 22vmax;
-    height: 27vmax;
-}
-
-#showResult
-{
-    font-size: 3vmax;
-    text-align: center;
-    min-height: 2em;
-    margin-bottom: 1em;
-}
-
-.winner
-{
-    color: #02C508;
-}
-
-.loser
-{
-    color: #C50202;
-}
-
-.score
-{
-    width: 22vmax;
-    margin-top: 5vmax;
-    display: flex;
-    flex-direction: column;
-}
-
-.keyword
-{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.keyLetter
-{
-    display: inline-block;
-    width: 10%;
-    font-size: 4.7vmin;
-    min-height: 1em;
-    text-align: center ;
-    color: #0A3871;
-    font-weight: bold;
-    padding-bottom: 1.5vmin;
-    border-bottom: 4px solid #0A3871;
-}
-
-.failLetterBox
-{
-    display: flex;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.failLetter
-{
-    font-size: 4vmin;
-    margin: 0.2em;
+    height: 64vh;
+    width: 100%;
 }
 
 .controller
@@ -93,12 +19,14 @@
     justify-content: center;
     align-self: center;
     width: 80vw;
-    margin-bottom: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 .teclas
 {
-    font-size: 2vmax;
+    background-color: inherit;
+    font-size: 1.5vmax;
     height: 2em;
     width: 2em;
     margin: 0.2vw;
