@@ -13,15 +13,8 @@ const words =
 ]
 
 /* Definimos los temas de las palabras */
-
-/* variable que usaremos para guardar el tema de la palabra y la palabra en si */
-var topic = "";
-var hiddenWord = "";
-
-console.log(sessionStorage.getItem("VEHICULOS") === null);
-
-/* Cargamos las palabras al navegador */
 const wordsTopics = ["VEHICULOS", "COMIDA", "ANIMALES", "EMPRESAS", "PAISES", "CAPITALES", "NOMBRES"]
+/* Cargamos las palabras al navegador */
 sessionStorage.setItem("wordsTopics", wordsTopics.join());
 for (let i = 0; i < wordsTopics.length; i++)
 {
@@ -29,10 +22,4 @@ for (let i = 0; i < wordsTopics.length; i++)
     {
         sessionStorage.setItem(wordsTopics[i], words[i].join());
     }
-}
-
-
-for (let i = 0; i < wordsTopics.length; i++)
-{
-    console.log(sessionStorage.getItem(wordsTopics[i]).split(","));
 }
